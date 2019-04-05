@@ -1,34 +1,30 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import LoadingBar from 'react-redux-loading'
+import { handleInitialData } from '../actions/shared'
 import { Navigation } from './Navigation'
-import { Questions } from './Questions'
+import Questions from './Questions'
 import logo from '../logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  componentDidMount() {
+    this.props.dispatch(handleInitialData())
+  }
+
   render() {
     return (
       <div className="App">
         <Navigation />
-        <header className="App-header">
-          <Questions>
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              Edit <code>src/App.js</code> and save to reload.
-            </p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
-          </Questions>
-          <LoadingBar/>
+        <LoadingBar/>
+          {this.props.loading === true
+            ? null
+            : (
+              <Questions />
+            )
+          }
 
-        </header>
       </div>
     );
   }
