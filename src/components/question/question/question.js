@@ -5,17 +5,17 @@ function Question(props) {
   return (
     <div className='decision-block flex-flex-start-v p10'>
       <h2>Would you rather...</h2>
-      <div className='flex-start-h'>
-        <input type='radio' name='optionOne' className='radio-btn' value=''/>
-          {optionOne.text}
+      <div className='flex-flex-start-h'>
+        <input type='radio' name='optionOne' className='radio-btn' value='' style={{ width: 20 }}/>
+        <div>{optionOne.text}</div>
       </div>
 
-      <div className='flex-start-h'>
-        <input type='radio' name='optionTwo' className='radio-btn' value=''/>
-        <div style={{ width: '100%' }}>{optionTwo.text}</div>
+      <div className='flex-flex-start-h'>
+        <input type='radio' name='optionTwo' className='radio-btn' value='' style={{ width: 20 }}/>
+        <div>{optionTwo.text}</div>
       </div>
 
-      <button>Submit</button>
+      <button className='mt10'>Submit</button>
     </div>
   )
 }

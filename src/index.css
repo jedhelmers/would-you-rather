@@ -74,7 +74,6 @@ li {
 }
 
 .question-body {
-    height: 800px;
     width: 500px;
     border: 1px solid #999;
     padding: 15px;
@@ -155,74 +154,112 @@ li {
   justify-content: space-between;
 }
 
+.selected {
+  border: 2px solid #ffa500;
+  background-color: rgba(255, 165, 0, .25)
+}
+
 .p5 {
-  padding: 5px
+  padding: 5px;
+  box-sizing: border-box
 }
 
 .p10 {
-  padding: 10px
+  padding: 10px;
+  box-sizing: border-box
 }
 
 .p15 {
-  padding: 15px
+  padding: 15px;
+  box-sizing: border-box
 }
 
 .pl5 {
-  padding-left: 5px
+  padding-left: 5px;
+  box-sizing: border-box
 }
 
 .pl10 {
-  padding-left: 10px
+  padding-left: 10px;
+  box-sizing: border-box
 }
 
 .pl15 {
-  padding-left: 15px
+  padding-left: 15px;
+  box-sizing: border-box
 }
 
 .pt5 {
-  padding-top: 5px
+  padding-top: 5px;
+  box-sizing: border-box
 }
 
 .pt10 {
-  padding-top: 10px
+  padding-top: 10px;
+  box-sizing: border-box
 }
 
 .pt15 {
-  padding-top: 15px
+  padding-top: 15px;
+  box-sizing: border-box
 }
 
 .m5 {
-  margin: 5px
+  margin: 5px;
+  box-sizing: border-box
 }
 
 .m10 {
-  margin: 10px
+  margin: 10px;
+  box-sizing: border-box
 }
 
 .m15 {
-  margin: 15px
+  margin: 15px;
+  box-sizing: border-box
 }
 
 .ml5 {
-  margin-left: 5px
+  margin-left: 5px;
+  box-sizing: border-box
 }
 
 .ml10 {
-  margin-left: 10px
+  margin-left: 10px;
+  box-sizing: border-box
 }
 
 .ml15 {
-  margin-left: 15px
+  margin-left: 15px;
+  box-sizing: border-box
 }
 
 .mt5 {
-  margin-top: 5px
+  margin-top: 5px;
+  box-sizing: border-box
 }
 
 .mt10 {
-  margin-top: 10px
+  margin-top: 10px;
+  box-sizing: border-box
 }
 
 .mt15 {
-  margin-top: 15px
+  margin-top: 15px;
+  box-sizing: border-box
+}
+
+.mb5 {
+  margin-bottom: 5px;
+  box-sizing: border-box
+}
+
+.mb10 {
+  margin-bottom: 10px;
+  box-sizing: border-box
+}
+
+.mb15 {
+  margin-bottom: 15px;
+  box-sizing: border-box
 }

@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 class QuestionBlock extends Component {
 
   state = {
-    toggle: true
+    toggle: false
   }
 
   render() {
@@ -17,10 +17,10 @@ class QuestionBlock extends Component {
         <p>This question doesn't exist</p>
       )
     }
-    console.log('props: ', user.avatarURL)
+
     return (
       <div className='question-block'>
-        <header className='pt5 flex-center-v'><h3>{user.name} asks: </h3></header>
+        <header className='flex-center-v'><h3>{user.name} asks: </h3></header>
         <div className='flex-space-between-h'>
           <div className='avatar-block flex-center-v'>
             <div className='avatar' style={{ backgroundImage: user.avatarURL }}></div>
